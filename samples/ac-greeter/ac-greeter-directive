@@ -1,0 +1,10 @@
+module.exports = function (acGreeterService) {
+    return {
+        restrict: 'E',
+        replace: true,
+        template: require('./ac-greeter.tpl.html'),
+        link: function(scope) {
+            scope.greet = acGreeterService.greet;
+        }
+    };
+};

@@ -1,0 +1,30 @@
+{
+    "name": "atomify-sample",
+    "version": "0.0.0",
+    "license": "ISC",
+    "dependencies": {
+        "angular-bsfy": "^1.2.23-1",
+        "jquery": "^2.1.1"
+    },
+    "atomify": {
+        "server": {
+            "lr": true,
+            "sync": true,
+            "open": true,
+            "path": "src/index.html"
+        },
+        "js": {
+            "entry": "src/main.js",
+            "alias": "src/app.js",
+            "debug": true
+        },
+        "css": {
+            "entry": "src/main.css",
+            "alias": "src/app.css"
+        },
+        "assets": {
+            "dest": "dist/assets",
+            "prefix": "/dist/assets"
+        }
+    }
+}
